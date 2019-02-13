@@ -103,10 +103,3 @@ ${offset 10}${downspeedgraph wlp6s0 10,180 324D23 77B753 100 -l}
 ${goto 30}${color1}UP${color}${goto 60}${voffset 15}${upspeed wlp6s0} ${goto 120}/  ${totalup wlp6s0}
 ${offset 10}${upspeedgraph wlp6s0 10,180 4B1B0C FF5C2B 100 -l}
 ]];
-
--- address block
--- ${goto 20}${color2}${font pftempestafivecondensed:size=11}ADDRESS:${font}${color1}
--- ${goto 30}Public IP:${color}${goto 90}${execi 60 wget -O - -q icanhazip.com}
--- ${goto 30}${color1}Lan IP:${color}${goto 90}${addr wlp6s0}
--- ${goto 30}${color1}Inbound Ports:${color}${goto 130}${tcp_portmon 1 32767 count}
--- ${goto 30}${color1}Outbound Ports:${color}${goto 130}${tcp_portmon 32768 61000 count}
